@@ -1,0 +1,60 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+pt_BR:
+  devise:
+    confirmations:
+      confirmed: "Sua conta foi confirmada. Por favor, faÁa login."
+      send_instructions: "Em alguns minutos vocÍ receber· um email com instruÁıes sobre como confirmar sua conta."
+      send_paranoid_instructions: "Se seu email j· existir em nossa base, vocÍ receber· em alguns minutos uma mensagem de email com instruÁıes sobre como confirmar sua conta."
+    failure:
+      already_authenticated: "VocÍ j· fez login"
+      inactive: "Sua conta ainda n„o foi ativada."
+      invalid: "Email ou senha inv·lidos."
+      invalid_token: "Token de autenticaÁ„o inv·lido."
+      invited: "VocÍ tem um convite pendente. Aceite-o para terminar de criar sua conta."
+      locked: "Sua conta est· bloqueada."
+      not_found_in_database: "Email ou senha inv·lidos."
+      timeout: "Sua seÁ„o expirou; por favor, faÁa login novamente para continuar."
+      unauthenticated: "VocÍ precisa fazer login ou registrar-se para continuar."
+      unconfirmed: "VocÍ precisa confirmar sua conta antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Confirme sua conta DMPonline ??"
+      reset_password_instructions:
+        subject: "Restabelecer as instruÁıes sobre senha"
+      unlock_instructions:
+        subject: "Desbloquear as instruÁıes"
+    omniauth_callbacks:
+      failure: "N„o foi possÌvel autenticar vocÍ de %{kind} porque \"%{reason}\"."
+      success: "AutenticaÁ„o da conta %{kind} bem-sucedida."
+    passwords:
+      no_token: "VocÍ sÛ pode acessar esta p·gina a partir de um email para redefiniÁ„o de senha. Se vocÍ est· vindo de um email de redefiniÁ„o de senha, assegure-se de ter usado toda a URL fornecida."
+      send_instructions: "Em alguns minutos vocÍ receber· um email com instruÁıes sobre como redefinir sua senha."
+      send_paranoid_instructions: "Se seu email j· est· em nossa base, vocÍ receber· em alguns minutos um email para recuperaÁ„o de senha."
+      updated: "Sua senha foi modificada com sucesso. VocÍ j· est· logado."
+      updated_not_active: "Sua senha foi modificada com sucesso."
+    registrations:
+      destroyed: "Adeus! Sua conta foi cancelada com sucesso. Esperamos vÍ-lo novamente em breve."
+      signed_up: "Bem-vindo! Registro realizado com sucesso."
+      signed_up_but_inactive: "VocÍ registrou-se com sucesso. PorÈm, n„o conseguimos deix·-lo entrar porque sua conta ainda n„o foi ativada."
+      signed_up_but_locked: "VocÍ registrou-se com sucesso. PorÈm, n„o conseguimos deix·-lo entrar porque sua conta est· bloqueada."
+      signed_up_but_unconfirmed: "Uma mensagem com um link de confirmaÁ„o foi enviada para seu email. Por favor, abra o link para ativar sua conta. Se vocÍ n„o receber o email de confirmaÁ„o, verifique seu filtro de spam."
+      update_needs_confirmation: "Sua conta foi atualizada com sucesso, mas precisamos conferir seu novo email. Por favor, veja seu email e clique no link de confirmaÁ„o para terminar de confirmar seu novo email."
+      updated: "Sua conta foi atualizada com sucesso."
+    sessions:
+      signed_in: "Entrada bem sucedida."
+      signed_out: "SaÌda bem sucedida."
+    unlocks:
+      send_instructions: "VocÍ receber· em poucos minutos um email com intruÁıes para desbloquear sua conta."
+      send_paranoid_instructions: "Se sua conta j· existe, vocÍ receber· em poucos minutos um email com instruÁıes para desbloque·-la."
+      unlocked: "Conta desbloqueada com sucesso. Por favor, faÁa login para continuar."
+  errors:
+    messages:
+      already_confirmed: "j· estava confirmado, por favor tente entrar"
+      confirmation_period_expired: "precisa ser confirmada no prazo de %{period}; por favor, solicite uma nova??"
+      expired: "expirou, por favor, solicite uma nova"
+      not_found: "n„o encontrado"
+      not_locked: "n„o foi bloqueado"
+      not_saved:
+        one: "1 erro impediu este %{resource} de ser salvo:"
+        other: "%{count} erros impediram este %{resource} de ser salvo:"
