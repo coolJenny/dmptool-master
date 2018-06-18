@@ -5,11 +5,13 @@ require 'rails/all'
 require 'recaptcha/rails'
 require 'csv'
 
+require "sprockets/railtie"
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 #if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  #Bundler.require(*Rails.groups(:assets => %w(development test)))
+  # Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 #end
@@ -34,7 +36,7 @@ module DMPRoadmap
 	# Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
-    # config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib)
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
@@ -55,7 +57,13 @@ module DMPRoadmap
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = false
 
-    config.autoload_paths += %W(#{config.root}/lib)
+    # config.autoload_paths += %W(#{config.root}/lib)
+    # config.assets.paths << Rails.root.join("app", "assets", "stylesheets")
+    # config.assets.paths << Rails.root.join("app", "assets", "javascripts")
+    # config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets")
+    # config.assets.paths << Rails.root.join("vendor", "assets", "javascripts")
+    # config.assets.compile = true
+
     config.action_controller.include_all_helpers = true
 
     # Set the default host for mailer URLs
