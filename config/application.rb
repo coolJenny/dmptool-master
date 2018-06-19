@@ -5,6 +5,7 @@ require 'rails/all'
 require 'recaptcha/rails'
 require 'csv'
 
+# require 'sass/rails'
 require "sprockets/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -58,7 +59,7 @@ module DMPRoadmap
     config.active_record.whitelist_attributes = false
 
     # config.autoload_paths += %W(#{config.root}/lib)
-    # config.assets.paths << Rails.root.join("app", "assets", "stylesheets")
+    # config.assets.paths << Rails.root.join("public", "assets", "stylesheets")
     # config.assets.paths << Rails.root.join("app", "assets", "javascripts")
     # config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets")
     # config.assets.paths << Rails.root.join("vendor", "assets", "javascripts")
