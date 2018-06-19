@@ -45,7 +45,8 @@
         </script>
     <![endif]-->
 
-    <%= stylesheet_link_tag fingerprinted_asset('application') %>
+    <!-- <%= stylesheet_link_tag fingerprinted_asset('application') %> -->
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag fingerprinted_asset('vendor') %>
     <%= javascript_include_tag fingerprinted_asset('application') %>
     <%= csrf_meta_tags %>
