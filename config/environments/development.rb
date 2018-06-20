@@ -46,7 +46,7 @@ Rails.application.configure do
   # Assets pipeline
   config.assets.enabled = false
   config.assets.debug = false
-  config.assets.compile = true
+  config.assets.compile = false
   config.assets.quiet = true
 
 # START DMPTool customization  
