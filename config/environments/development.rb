@@ -44,7 +44,7 @@ Rails.application.configure do
     ActiveRecord::Base.logger.level = Logger::DEBUG
   end
   # Assets pipeline
-  config.assets.enabled = false
+  config.assets.enabled = true
   config.assets.debug = false
   config.assets.compile = false
   config.assets.quiet = true
